@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+  --canvas: #111018;
+  --sidebar: #181623;
+  --surface: #1d1b28;
+  --surface-raised: #252232;
+  --surface-hover: #2d293d;
+  --border: #3d384e;
+  --text: #f4f0fa;
+  --text-secondary: #d8d1e4;
+  --text-muted: #b0a8bb;
+  --text-subtle: #938aa2;
+  --accent: #c4a9f8;
+  --accent-strong: #a77ae8;
+  --accent-contrast: #241735;
+  --accent-wash: #302642;
+  --code-surface: #15131d;
+  --code-highlight: #332344;
+  --code-foreground: #eee9f7;
+  --code-line-number: #a49bb2;
+  --font-mono: 'DM Mono', monospace;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --canvas: #f7f5fa;
+  --sidebar: #eeebf4;
+  --surface: #ffffff;
+  --surface-raised: #f2eff7;
+  --surface-hover: #e9e3f1;
+  --border: #ddd6e8;
+  --text: #251f2f;
+  --text-secondary: #483f55;
+  --text-muted: #615a6d;
+  --text-subtle: #7c738a;
+  --accent: #684a98;
+  --accent-strong: #62408f;
+  --accent-contrast: #ffffff;
+  --accent-wash: #eee7f7;
+  --code-surface: #211b2b;
+  --code-highlight: #3a2a50;
+  --code-foreground: #eee9f7;
+  --code-line-number: #a49bb2;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; background: var(--canvas); scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--canvas); color: var(--text); font-size: 1rem; line-height: 1.6; transition: background .2s, color .2s; }
+button, input { font: inherit; }
+button { color: inherit; }
+::selection { background: var(--accent-wash); color: var(--text); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

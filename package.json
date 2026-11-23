@@ -1,0 +1,20 @@
+{
+  "name": "hitesh-choudhary-tutorial-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.0.1",
+    "framer-motion": "^14.14.0",
+    "lucide-react": "^1.78.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.0.12"
+  }
+}
